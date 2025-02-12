@@ -1,0 +1,56 @@
+import Image from "next/image";
+import logoImage from "../assets/images/logosaas.png";
+import { MenuIcon } from "lucide-react";
+
+const Header = () => {
+  return (
+    <header className="bg-black py-4">
+      <div className="container">
+        <div className="flex items-center justify-between">
+          <div className="relative">
+            <div className="absolute w-full top-2 bottom-0 bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] blur-md" />
+            <Image src={logoImage} alt="logo" className="h-12 w-12 relative" />
+          </div>
+          <nav className="gap-6 items-center hidden sm:flex">
+            <a
+              href="#"
+              className="text-opacity-60 text-white hover:text-opacity-100 transition"
+            >
+              About
+            </a>
+            <a
+              href="#"
+              className="text-opacity-60 text-white hover:text-opacity-100 transition"
+            >
+              Features
+            </a>
+            <a
+              href="#"
+              className="text-opacity-60 text-white hover:text-opacity-100 transition"
+            >
+              Updates
+            </a>
+            <a
+              href="#"
+              className="text-opacity-60 text-white hover:text-opacity-100 transition"
+            >
+              Help
+            </a>
+            <a
+              href="#"
+              className="text-opacity-60 text-white hover:text-opacity-100 transition"
+            >
+              Customers
+            </a>
+            <button className="bg-white py-2 px-4 rounded-lg">
+              Get for free
+            </button>
+          </nav>
+          <MenuIcon color="#fff" className="block sm:hidden" />
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
