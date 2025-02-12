@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 
-const Home = () => {
+export default function Home() {
   return (
     <>
       <Banner />
@@ -12,6 +12,4 @@ const Home = () => {
       <Footer />
     </>
   );
-};
-
-export default Home;
+}
