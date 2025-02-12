@@ -5,6 +5,7 @@ import cursorImage from "../assets/images/cursor.png";
 import messageImage from "../assets/images/message.png";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -27,7 +28,7 @@ const Hero = () => {
             <h1 className="text-7xl sm:text-9xl font-bold tracking-tighter text-center inline-flex">
               One Task <br /> at a Time
             </h1>
-            <div className="absolute right-[476px] top-[108px] hidden sm:inline">
+            <motion.div className="absolute right-[476px] top-[108px] hidden sm:inline">
               <Image
                 src={cursorImage}
                 alt=""
@@ -36,8 +37,8 @@ const Hero = () => {
                 className="max-w-none"
                 draggable="false"
               />
-            </div>
-            <div className="absolute top-[56px] left-[498px] hidden sm:inline">
+            </motion.div>
+            <motion.div className="absolute top-[56px] left-[498px] hidden sm:inline">
               <Image
                 src={messageImage}
                 alt=""
@@ -46,7 +47,7 @@ const Hero = () => {
                 className="max-w-none"
                 draggable="false"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="flex justify-center">
