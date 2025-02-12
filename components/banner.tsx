@@ -11,7 +11,7 @@ const Banner = () => {
             This page is included in a free SaaS Website Kit.{" "}
           </span>
           <Link
-            href={""}
+            href={"#"}
             className="cursor-pointer hover:underline hover:underline-offset-4"
           >
             View the complete Kit{" "}

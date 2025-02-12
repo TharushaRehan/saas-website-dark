@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex justify-center">
           <div className="inline-flex gap-x-3 border py-1 px-2 rounded-lg border-white/30">
             <p className="text-white/60">Version 2.0 is here</p>
-            <Link href={""} className="group">
+            <Link href={"#"} className="group">
               Read more{" "}
               <ArrowRight
                 className="inline-flex transition-all duration-300 ease-out group-hover:translate-x-1"
