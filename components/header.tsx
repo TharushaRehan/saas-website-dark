@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logoImage from "@/assets/images/logosaas.png";
+import logoImage from "/assets/images/logosaas.png";
 import { MenuIcon } from "lucide-react";
 
 const Header = () => {
@@ -9,7 +9,13 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="relative">
             <div className="absolute w-full top-2 bottom-0 bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] blur-md" />
-            <Image src={logoImage} alt="logo" className="h-12 w-12 relative" />
+            <Image
+              src={"/assets/images/logosaas.png"}
+              alt="logo"
+              className="h-12 w-12 relative"
+              width={48}
+              height={48}
+            />
           </div>
           <nav className="gap-6 items-center hidden sm:flex">
             <a

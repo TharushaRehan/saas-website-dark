@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import cursorImage from "@/assets/images/cursor.png";
-import messageImage from "@/assets/images/message.png";
+import cursorImage from "/assets/images/cursor.png";
+import messageImage from "/assets/images/message.png";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -30,7 +30,7 @@ const Hero = () => {
             </h1>
             <motion.div className="absolute right-[476px] top-[108px] hidden sm:inline">
               <Image
-                src={cursorImage}
+                src={"/assets/images/cursor.png"}
                 alt=""
                 height={200}
                 width={200}
@@ -40,7 +40,7 @@ const Hero = () => {
             </motion.div>
             <motion.div className="absolute top-[56px] left-[498px] hidden sm:inline">
               <Image
-                src={messageImage}
+                src={"/assets/images/cursor.png"}
                 alt=""
                 height={200}
                 width={200}

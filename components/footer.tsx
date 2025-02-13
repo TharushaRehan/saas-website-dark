@@ -1,9 +1,9 @@
-import InstaIcon from "@/assets/icons/insta.svg";
-import XIcon from "@/assets/icons/x-social.svg";
-import TikTokIcon from "@/assets/icons/tiktok.svg";
-import YoutubeIcon from "@/assets/icons/youtube.svg";
-import PinterestIcon from "@/assets/icons/pinterest.svg";
-import LinkedinIcon from "@/assets/icons/linkedin.svg";
+import InstaIcon from "/assets/icons/insta.svg";
+import XIcon from "/assets/icons/x-social.svg";
+import TikTokIcon from "/assets/icons/tiktok.svg";
+import YoutubeIcon from "/assets/icons/youtube.svg";
+import PinterestIcon from "/assets/icons/pinterest.svg";
+import LinkedinIcon from "/assets/icons/linkedin.svg";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
             © 2024 Your Company, Inc. All rights reserved.
           </div>
           <ul className="flex justify-center gap-3">
-            <li>
+            {/* <li>
               <XIcon />
             </li>
             <li>
@@ -31,7 +31,7 @@ const Footer = () => {
             </li>
             <li>
               <YoutubeIcon />
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
