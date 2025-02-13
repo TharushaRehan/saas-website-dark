@@ -1,5 +1,4 @@
 import Image from "next/image";
-import logoImage from "/assets/images/logosaas.png";
 import { MenuIcon } from "lucide-react";
 
 const Header = () => {
